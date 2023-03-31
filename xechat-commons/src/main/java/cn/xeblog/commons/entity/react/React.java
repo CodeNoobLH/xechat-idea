@@ -6,6 +6,18 @@ package cn.xeblog.commons.entity.react;
  */
 public enum React {
 
-    SEND_FILE;
+    /**
+     * 上传文件
+     */
+    UPLOAD,
+    /**
+     * 下载文件
+     */
+    DOWNLOAD,
+    /**
+     * 管控
+     */
+    ADMIN
+    ;
 
 }

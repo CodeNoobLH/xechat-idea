@@ -1,23 +1,26 @@
 package cn.xeblog.commons.entity.react.result;
 
-import cn.xeblog.commons.entity.react.BaseReact;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
  * @author anlingyi
- * @date 2022/9/19 8:21 AM
+ * @date 2023/2/18 8:15 PM
  */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ReactResult<T> extends BaseReact {
+public class AdminReactResult {
 
-    private boolean succeed;
+    /**
+     * 全局权限值
+     */
+    private int globalPermit;
 
-    private T data;
-
-    private String msg;
+    /**
+     * 文件大小限制
+     */
+    private int maxFileSize;
 
 }
